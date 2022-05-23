@@ -1,0 +1,30 @@
+.logo{
+    position:relative;
+    top: 8px;
+    height: 80px;
+    width: 105px;
+    cursor: pointer;
+}
+.header-nav{
+    position: relative;
+    top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: darkblue;
+}
+.headerimg{
+    background-color: white;
+   }
+.btnMain{
+    font-size: 20px;
+}
+.btnMain:hover{
+    color: #bf1e2e;
+}
+.modal-footer button{
+    background-color: #bf1e2e;
+    color:white
+}
+th{
+    color:#bf1e2e;
+}

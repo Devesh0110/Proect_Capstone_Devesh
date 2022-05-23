@@ -1,0 +1,55 @@
+.logo{
+    position:relative;
+    top: 8px;
+    height: 40px;
+    width: 52px;
+    cursor: pointer;
+}
+.header-nav{
+    position: relative;
+    top:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: darkblue;
+}
+.bthHead{
+    margin-left: 10px;
+}
+
+.active, .bthHead:hover{
+    color: #bf1e2e;
+}
+
+hr{
+    margin: 0;
+}
+.prodLogo{
+    position: relative;
+    top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.AddProd{
+    margin: 10px;
+}
+
+.makeCenter{
+    text-align: center;
+}
+
+.form-check-input{
+    margin-top: 3px;
+}
+
+p{
+    color: red;
+}
+
+.modal-title{
+    font-size: 18px;
+}
+
+th{
+    text-align: center;
+}

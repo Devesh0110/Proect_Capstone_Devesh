@@ -1,0 +1,61 @@
+<div class="b">
+<div class="card-top container-fluid  dheader" style="background-color: lightgrey;">
+    <div class="container d-flex  dheader">
+        <div class="container d-flex">
+            <!-- <label for="products">Filter Products :</label>
+  <select name="cars" id="cars">
+    <option value="All Products"><a (click)="getProducts()" id="allProducts" >All Products</a></option>
+    <option value="Chinese"><a (click)="categoryChinese()" id="chinese">Chinese</a></option>
+    
+  </select> -->
+            <nav class="navbar navbar-expand-lg navbar-light col-md-10  dheader">
+                <div class="navSec">
+                    <a (click)="getProducts()" id="allProducts" class="navbar-brand">All Products</a>
+                </div>
+                <div class="navSec">
+                    <a (click)="categoryItalian()" id="italian" class="navbar-brand">Chef's Choice</a>
+                </div>
+                <div class="navSec">
+                    <a (click)="categoryIndian()" id="indian" class="navbar-brand">Indian</a>
+                </div>
+                <div class="navSec">
+                    <a (click)="categoryMexican()" class="navbar-brand">Continental</a>
+                </div>
+                
+            </nav>
+
+            <div class="form-group col-md-2 col-lg-2  dheader" style="padding-right: 20px;">
+                <input type="text" class="form-control" name="searchKey" [(ngModel)]="searchKey"
+                    (ngModelChange)="Search()" placeholder="Search Product">
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div style="text-align: center;">
+    <h1>Welcome to Foodbox, by Devesh Foods !</h1>
+    <h3>We serve all Continental & Indian Foods</h3>
+        <br><br>
+    <h4>Choose from a variety of mouth watering dishes within minutes</h4>
+</div>
+    <br>
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of products">
+            <div class="card col-md-4 flex-column" style="margin-right:10px;background-color: rgb(202, 241, 197)">
+                <center><img style="align-content: center;" src="{{item.imagepath}}" alt="">
+                <h2>{{item.name}} </h2>
+                <p>{{item.desc}}</p>
+                <p><strong>Price: </strong>Rs. {{item.price}}
+                   
+                </p>
+               
+                <button *ngIf="login==0" class="align-self-end mt-auto btn addcart btn-danger"
+                    (click)="showToLogin()">Add to Cart</button>
+                <button *ngIf="login==1" class="align-self-end mt-auto btn addcart btn-success"
+                    (click)="addToCart(item)" id="addToCart">Add to Cart</button></center>
+            </div>
+        </ng-container>
+    </div>
+</div>
+</div>
